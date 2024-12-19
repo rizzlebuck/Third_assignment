@@ -1,0 +1,33 @@
+# Task 1 
+attendees = int(input("Enter number of attendees: "))
+venue = "large hall" if attendees > 100 else "conference room"
+print(venue)
+
+# Task 2
+attendees = int(input("Enter number of attendees: "))
+if attendees > 100:
+    venue = "Large hall w/ Audio system and Projector"
+else:
+    venue = "conference room"
+    if attendees > 20:
+        print("You'll need an audio system")
+    elif attendees > 10:
+        print("A projector can also come in handy")
+print(venue)
+
+# Task 3
+attendees = int(input("Enter number of attendees: "))
+if attendees > 100:
+    venue = "Large hall w/ Audio system and Projector"
+else:
+    venue = "conference room"
+    if attendees > 20:
+        print("You'll need an audio system")
+    elif attendees > 10:
+        print("A projector can also come in handy")
+print(venue)
+food_choice = input("Food choice?: (A)Veggie Delight Caterers or (B)Gourmet Meals Caterers")
+if food_choice == "A" or food_choice == "Veggie Delight Caterers":
+    print("Vegetarian it is!")
+elif food_choice == "B" or food_choice == "Gourmet Meals Caterers":
+    print("Looks like meat is back on the menu boys!")
